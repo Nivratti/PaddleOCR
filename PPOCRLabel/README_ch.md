@@ -24,7 +24,7 @@ PPOCRLabel是一款适用于OCR领域的半自动化图形标注工具，内置P
   - 识别结果更改为单击修改。（如果无法修改，请切换为系统自带输入法，或再次切回原输入法）
 - 2020.12.18： 支持对单个标记框进行重新识别（by [ninetailskim](https://github.com/ninetailskim)），完善快捷键。
 
-如果您对以上内容感兴趣或对完善工具有不一样的想法，欢迎加入我们的SIG队伍与我们共同开发。可以在[此处](https://github.com/PaddlePaddle/PaddleOCR/issues/1728)完成问卷和前置任务，经过我们确认相关内容后即可正式加入，享受SIG福利，共同为OCR开源事业贡献（特别说明：针对PPOCRLabel的改进也属于PaddleOCR前置任务）
+如果您对完善工具有不一样的想法，欢迎通过[社区常规赛](https://github.com/PaddlePaddle/PaddleOCR/issues/4982)报名相关更改，获得积分兑换奖励。
 
 
 
@@ -181,18 +181,28 @@ PPOCRLabel支持三种导出方式：
 
 ```
 cd ./PPOCRLabel # 将目录切换到PPOCRLabel文件夹下
-python gen_ocr_train_val_test.py --trainValTestRatio 6:2:2 --labelRootPath ../train_data/label --detRootPath ../train_data/det --recRootPath ../train_data/rec
+python gen_ocr_train_val_test.py --trainValTestRatio 6:2:2 --datasetRootPath ../train_data 
 ```
 
 参数说明：
 
 - `trainValTestRatio` 是训练集、验证集、测试集的图像数量划分比例，根据实际情况设定，默认是`6:2:2`
 
-- `labelRootPath` 是PPOCRLabel标注的数据集存放路径，默认是`../train_data/label`
-
-- `detRootPath` 是根据PPOCRLabel标注的数据集划分后的文本检测数据集存放的路径，默认是`../train_data/det `
-
-- `recRootPath` 是根据PPOCRLabel标注的数据集划分后的字符识别数据集存放的路径，默认是`../train_data/rec`
+- `datasetRootPath` 是PPOCRLabel标注的完整数据集存放路径。默认路径是 `PaddleOCR/train_data` 分割数据集前应有如下结构：
+  ```
+  |-train_data
+    |-crop_img
+      |- word_001_crop_0.png
+      |- word_002_crop_0.jpg
+      |- word_003_crop_0.jpg
+      | ...
+    | Label.txt
+    | rec_gt.txt
+    |- word_001.png
+    |- word_002.jpg
+    |- word_003.jpg
+    | ...
+  ```
 
 ### 3.6 错误提示
 

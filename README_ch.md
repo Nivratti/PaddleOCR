@@ -53,8 +53,8 @@ PaddleOCR旨在打造一套丰富、领先、且实用的OCR工具库，助力�
 ## 社区、社区贡献与社区常规赛
 
 - 加入社区：微信扫描下方二维码加入官方交流群，与各行各业开发者充分交流，期待您的加入。
-- 社区贡献：[社区贡献](./doc/doc_ch/thirdparty.md)文档中包含了社区用户**使用PaddleOCR开发的各种工具、应用**以及**为PaddleOCR贡献的功能、优化的文档与代码**等，是官方为社区开发者打造的荣誉墙、也是帮助优质项目宣传的广播站。如果您的OCR项目未被收集在文档中，可根据文档说明与我们联系。最新社区贡献可查看[此处](#社区贡献)。
-- 社区常规赛：作为社区贡献的具体承载形式，社区常规赛是面向OCR开发者的积分赛事。首届社区常规赛与[《动手学OCR · 十讲》课程](https://aistudio.baidu.com/aistudio/course/introduce/25207)联合推广。社区常规赛的赛题详情与报名方法可参考[链接](https://github.com/PaddlePaddle/PaddleOCR/issues/4982)。
+- 社区贡献：[社区贡献](./doc/doc_ch/thirdparty.md)文档中包含了社区用户**使用PaddleOCR开发的各种工具、应用**以及**为PaddleOCR贡献的功能、优化的文档与代码**等，是官方为社区开发者打造的荣誉墙、也是帮助优质项目宣传的广播站。如果您的OCR项目未被收集在文档中，可根据文档说明与我们联系。
+- 社区常规赛：社区常规赛是面向OCR开发者的积分赛事，覆盖文档、代码、模型和应用四大类型，以季度为单位评选并发放奖励，赛题详情与报名方法可参考[链接](https://github.com/PaddlePaddle/PaddleOCR/issues/4982)。
 
 <div align="center">
 <img src="https://raw.githubusercontent.com/PaddlePaddle/PaddleOCR/dygraph/doc/joinus.PNG"  width = "200" height = "200" />
@@ -99,8 +99,8 @@ PaddleOCR旨在打造一套丰富、领先、且实用的OCR工具库，助力�
 - [PP-Structure信息提取](./ppstructure/README_ch.md)
     - [版面分析](./ppstructure/layout/README_ch.md)
     - [表格识别](./ppstructure/table/README_ch.md)
-    - [DocVQA](https://github.com/PaddlePaddle/PaddleOCR/tree/release/2.4/ppstructure/vqa)
-    - [关键信息提取](https://github.com/PaddlePaddle/PaddleOCR/blob/release/2.4/ppstructure/docs/kie.md)
+    - [DocVQA](./ppstructure/vqa/README_ch.md)
+    - [关键信息提取](./ppstructure/docs/kie.md)
 - OCR学术圈
     - [两阶段模型介绍与下载](./doc/doc_ch/algorithm_overview.md)
     - [端到端PGNet算法](./doc/doc_ch/pgnet.md)
@@ -157,17 +157,6 @@ PaddleOCR旨在打造一套丰富、领先、且实用的OCR工具库，助力�
     <img src="./doc/imgs_results/french_0.jpg" width="800">
     <img src="./doc/imgs_results/korean.jpg" width="800">
 </div>
-<a name="社区贡献"></a>
-
-## 最新社区贡献
-
-- 基于PaddleOCR的社区项目： [FastOCRLabel](https://gitee.com/BaoJianQiang/FastOCRLabel)：完整的C#版本标注工具 (@ [包建强](https://gitee.com/BaoJianQiang) )
-- 为PaddleOCR新增功能：非常感谢 [Evezerest](https://github.com/Evezerest)， [ninetailskim](https://github.com/ninetailskim)， [edencfc](https://github.com/edencfc)， [BeyondYourself](https://github.com/BeyondYourself)， [1084667371](https://github.com/1084667371) 贡献了[PPOCRLabel](https://github.com/PaddlePaddle/PaddleOCR/blob/release/2.3/PPOCRLabel/README_ch.md) 的完整代码。
-- 代码与文档优化：非常感谢 [BeyondYourself](https://github.com/BeyondYourself) 给PaddleOCR提了很多非常棒的建议，并简化了PaddleOCR的部分代码风格。
-- 多语言语料：非常感谢 [Mejans](https://github.com/Mejans) 给PaddleOCR增加新语言奥克西坦语Occitan的字典和语料([#954](https://github.com/PaddlePaddle/PaddleOCR/pull/954))。
-
-完整社区贡献列表可查看[社区贡献文档](./doc/doc_ch/thirdparty.md)
-
 <a name="许可证书"></a>
 
 ## 许可证书
