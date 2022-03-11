@@ -4,10 +4,11 @@ Global:
   log_smooth_window: 20
   print_batch_step: 10
   save_model_dir: ./output/rec_arabic_v2
-  save_epoch_step: 3
+  save_epoch_step: 1 # 3
   # evaluation is run every 5000 iterations after the 4000th iteration
   # eval_batch_step: [0, 2000]
-  eval_batch_step: [0, 200]
+  # eval_batch_step: [0, 200]
+  eval_batch_step: [0, 4000]
   cal_metric_during_train: True
   pretrained_model:
   checkpoints:
@@ -29,7 +30,7 @@ Optimizer:
   lr:
     name: Cosine
     learning_rate: 0.001
-    warmup_epoch: 2 # 5
+    warmup_epoch: 5
   regularizer:
     name: 'L2'
     factor: 0.00004
