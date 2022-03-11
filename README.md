@@ -17,6 +17,9 @@ English | [简体中文](README_ch.md)
     <a href="https://github.com/PaddlePaddle/PaddleOCR/stargazers"><img src="https://img.shields.io/github/stars/PaddlePaddle/PaddleOCR?color=ccf"></a>
 </p>
 
+## Setting up Cuda and cudadnn on new server:
+1) Cuda 11.2 [drive doc link](https://drive.google.com/drive/u/0/folders/15i3mDmgeurjXsRau8hlJoHZu34ngQgJB):
+
 ## Introduction
 
 PaddleOCR aims to create multilingual, awesome, leading, and practical OCR tools that help users train better models and apply them into practice.
