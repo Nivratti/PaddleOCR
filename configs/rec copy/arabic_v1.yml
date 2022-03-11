@@ -3,7 +3,7 @@ Global:
   epoch_num: 500
   log_smooth_window: 20
   print_batch_step: 10
-  save_model_dir: ./output/rec_arabic_v2
+  save_model_dir: ./output/rec_arabic_v1
   save_epoch_step: 3
   # evaluation is run every 5000 iterations after the 4000th iteration
   # eval_batch_step: [0, 2000]
@@ -15,8 +15,8 @@ Global:
   use_visualdl: False
   infer_img: doc/imgs_words/ch/word_1.jpg
   # for data or label process
-  character_dict_path: ppocr/utils/dict/arabic_dict_v2_with_contextual_chars.txt
-  max_text_length: 30 # 25
+  character_dict_path: ppocr/utils/dict/arabic_dict.txt
+  max_text_length: 25
   infer_mode: False
   use_space_char: True
   save_res_path: ./output/rec/predicts_arabic.txt
