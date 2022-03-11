@@ -1,3 +1,6 @@
+## First upgrade pip to fix skbuild issue
+# python3 -m pip install --upgrade pip
+
 shapely
 scikit-image
 imgaug==0.4.0
@@ -12,4 +15,13 @@ cython
 lxml
 premailer
 openpyxl
+
+# -----
+imgaug
+pyclipper
+Levenshtein
+tqdm
+
+
+
 
